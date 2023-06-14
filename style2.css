@@ -1,0 +1,88 @@
+/* Add these styles to your existing style.css file */
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 50px;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links {
+    display: flex;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+  }
+  
+  /* Profile Card Styles */
+  .profile-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Skill Card Styles */
+  .skill-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust styles for mobile devices */
+    section {
+      padding: 20px;
+    }
+  
+    .profile-container,
+    .skills-container,
+    .education-container,
+    .projects-container {
+      flex-direction: column;
+    }
+    
+    .profile-card,
+    .skill-card,
+    .education-card,
+    .project-card {
+      margin-bottom: 20px;
+    }
+  }
+  

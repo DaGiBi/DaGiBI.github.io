@@ -5,13 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="/script.js" defer></script>
   <title>Najib Aseri</title>
 </head>
 <body>
-  <section class="top">
+  <section id="home" class="top">
     <div class="container">
       <h2 class="welcome">Welcome to <br>My Domain</h2>
+      <a href="#profile" class="scroll-button scroll-down-button">
+        <i class="fas fa-arrow-down"></i>
+      </a>
     </div>
   </section>
   
@@ -21,42 +25,87 @@
         <button><a class="nav-link" href="#home">Home</a></button>
         <button><a class="nav-link" href="#profile">Profile</a></button>
         <button><a class="nav-link" href="#skill">Skill</a></button>
-        <button><a class="nav-link" href="#education">Education</a></button>
-        <button><a class="nav-link" href="#projects">projects</a></button>
-        
+        <!-- <button><a class="nav-link" href="#education">Education</a></button> -->
+        <button><a class="nav-link" href="#projects">Projects</a></button>
+        <button><a class="nav-link" href="#contact">Contact</a></button>
+       
       </div>
     </div>
   </nav>
 
-  <section class="profile">
+  <section id="profile" class="profile">
     <div class="container">
       <div class="profile-container wrapper">
         <div class="profile-card card reveal">
-
+          <div>
+            <img src="asset/ProfilePitcure.png" alt="profile image" class="profile-image">
+          </div>
         </div>
         <div class="profile-card card reveal">
-          <p class="text">Hello, my name Najib Aseri. <br>
-            An  I am back-end developer</p>
+          <div>
+            <p class="text">
+              Hi! I'm Najib Aseri, Computer Science Student. 
+            </p>
           </div>
+          <div>
+            <p class="text">
+              I love to build web application
+            </p>
+          </div>
+          <div>
+            <p class="text">
+              When im not coding, I love to play RPG games and watching Anime.
+            </p>
+          </div>  
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="skills">
+  <section id="skill" class="skill">
     <div class="container">
       <div class="skills-container wrapper">
         <div class="skill-card card reveal">
-          <p class="text">What Im familiar is: </p>
-          <p> Js, Java, C++, Html, Css</p>
+          <p class="text">What Coding Language I'm familiar with:</p>
+          <div class="skills-list">
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <i class="fab fa-java"></i>
+              <i class="fab fa-cuttlefish"></i>
+              <i class="fab fa-python"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+            </div>
+          </div>
+          <p class="text">Frameworks:</p>
+          <div class="tool-list">
+            <div class="tool-item">
+              <i class="fab fa-react"></i>
+              <i class="fab fa-python"></i>
+              <i class="fab fa-node-js"></i>
+            </div>
+          </div>
         </div>
         <div class="skill-card card reveal">
-          <p class="text">Hello, my name Najib Aseri. <br>
-            An  I am back-end developer</p>
+          <p class="text">Tools:</p>
+          <div class="tools-list">
+            <div class="tool-item">
+              <i class="fab fa-git"></i>
+              <i class="fab fa-github"></i>
+              <i class="fab fa-microsoft"></i>
+            </div>
+          </div>
+          <p class="text">Databases:</p>
+          <div class="tools-list">
+            <div class="tool-item">
+              <p>Oracle, MongoDB, MySQL</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="education">
+  <!-- <section id="education" class="education">
     <div class="container">
       <div class="education-container wrapper">
         <div class="skill-card card reveal">
@@ -65,8 +114,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="projects">
+  </section> -->
+  <section id="projects" class="projects">
     <div class="container">
       <!-- buat navigation - academic, personal, carrer -->
       <div class="projects-container wrapper">
@@ -77,7 +126,7 @@
       </div>
     </div>
   </section>
-  <section class="footer">
+  <section id="contact" class="footer">
     <div class="container">
       <div class="footer-contact">
         <p>
