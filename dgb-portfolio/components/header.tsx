@@ -65,12 +65,12 @@ export function Header() {
         </NavbarContent> */}
         <NavbarMenu className="mx-4 !w-auto ">
           {menuItems.map((item, index) => (
-            <NavbarMenuItem className="!mr-4 w-1" key={`${item}-${index}`}>
+            <NavbarMenuItem className="py-2" key={`${item}-${index}`}>
               <Link
                 color={
                   index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
                 }
-                className="!w-1"
+                className=""
                 href="#"
                 size="lg"
               >

@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en" className='m-4'>
       <body className={inter.className}>
         <Providers>
-          <Header />
           {children}
         </Providers>
       </body>
