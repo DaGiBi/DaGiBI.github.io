@@ -24,7 +24,7 @@ export function Header() {
     ];
   
     return (
-      <Navbar onMenuOpenChange={setIsMenuOpen} className="">
+      <Navbar onMenuOpenChange={setIsMenuOpen} className="!w-full">
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -63,14 +63,14 @@ export function Header() {
             </Button>
           </NavbarItem>
         </NavbarContent> */}
-        <NavbarMenu>
+        <NavbarMenu className="mx-4 !w-auto ">
           {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
+            <NavbarMenuItem className="!mr-4 w-1" key={`${item}-${index}`}>
               <Link
                 color={
                   index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
                 }
-                className="w-full"
+                className="!w-1"
                 href="#"
                 size="lg"
               >

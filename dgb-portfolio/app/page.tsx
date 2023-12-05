@@ -3,7 +3,7 @@ import {Button} from '@nextui-org/button'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 text-foreground bg-background">
+    <main className="flex min-h-screen flex-col items-center justify-between  text-foreground bg-background">
       home
     </main>
   )
