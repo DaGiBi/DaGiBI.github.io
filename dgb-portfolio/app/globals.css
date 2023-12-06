@@ -7,6 +7,7 @@ body,
 :root {
   height: 100%;
 }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -22,6 +23,10 @@ body,
 }
 
 body {
+  margin: 1rem;
+  display: block;
+  position: relative;
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -29,4 +34,20 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+body::before{
+  top: 0;
+}
+
+body:after, body:before {
+  content: "";
+  will-change: top left;
+  backface-visibility: hidden;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #fff;
+  z-index: 20000;
 }
