@@ -1,8 +1,14 @@
+
+
+
 const Footer = () => {
     return ( 
-        <div>
-            Footer
-        </div>
+        <footer>
+            <div className="w-wrapper  block bottom-0 w-full">
+                Footer
+                adadad
+            </div>
+        </footer>
      );
 }
  

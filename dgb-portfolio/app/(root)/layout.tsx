@@ -8,11 +8,11 @@ const HomepageLayout = ({
   }) => {
     return ( 
       <div className="h-full">
+        <main className="flex flex-col min-h-screen justify-between">
         <Header />
-        <main className="md:pl-56 pt-[80px] h-full">
           {children}
-        </main>
         <Footer/>
+        </main>
       </div>
      );
   }
