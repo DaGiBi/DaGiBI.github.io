@@ -1,5 +1,6 @@
 import Image from "next/image"
 import SkillPanel from "./_components/skill-panel";
+import WorkExperience from "./_components/work-experience";
 
 export default function Homepage() {
     return (  
@@ -23,8 +24,33 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
+            <section id="work-experience" className="w-wrapper w-full ">
+                <div className="flex flex-col items-center justify-center px-10">
+                    <div className="flex flex-col items-center justify-center py-5">
+                        <h1 className="text-4xl font-bold">
+                            Work Experience
+                        </h1>
+                        <p>
+                            What I`ve done so far`
+                        </p>
+                    </div>
+                    
+                    <div id="" className="flex-col items-center justify-center border-l-2 pl-4 
+                    ">
+                      
+                            <WorkExperience/>
+                      
+
+                    </div>
+                </div>
+                
+            </section>
             <section id="skill" className="w-wrapper">
                 <SkillPanel/>
+            </section>
+
+            <section id="my-work" className="w-full w-wrapper">
+                
             </section>
 
         </>

@@ -37,6 +37,9 @@ body {
   display: block;
   position: relative;
 
+  border-radius: 100px;
+
+  
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -50,6 +53,10 @@ body::before{
   top: 0;
 }
 
+body::after{
+  bottom: 0;
+}
+
 body:after, body:before {
   content: "";
   will-change: top left;
@@ -58,6 +65,19 @@ body:after, body:before {
   left: 0;
   width: 100%;
   height: 20px;
-  background: #fff;
+  background: #0D001A;
   z-index: 20000;
+}
+
+#timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px; /* Adjust border width as needed */
+  height: 8px; /* Adjust border height as needed */
+  background-color: #fff; /* Adjust border color as needed */
+  border-radius: 50%;
+  z-index: 1;
 }

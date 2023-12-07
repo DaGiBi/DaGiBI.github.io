@@ -53,7 +53,7 @@ const config: Config = {
     {
       prefix: "nextui", // prefix for themes variables
       addCommonColors: false, // override common colors (e.g. "blue", "green", "pink").
-      defaultTheme: "light", // default theme from the themes object
+      defaultTheme: "purple-dark", // default theme from the themes object
       defaultExtendTheme: "dark", // default theme to extend on custom themes
       layout: {
         disabledOpacity: "0.3", // opacity-[0.3]
