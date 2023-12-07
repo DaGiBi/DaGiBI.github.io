@@ -22,7 +22,7 @@ export default function NavBar() {
         "Blog",
       ];
     return ( 
-        <Navbar onMenuOpenChange={setIsMenuOpen} position="static">
+        <Navbar onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
