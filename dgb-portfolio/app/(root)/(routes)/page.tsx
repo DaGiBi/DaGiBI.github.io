@@ -1,6 +1,7 @@
 import Image from "next/image"
 import SkillPanel from "./_components/skill-panel";
 import WorkExperience from "./_components/work-experience";
+import MyWork from "./_components/my-works";
 
 export default function Homepage() {
     return (  
@@ -50,7 +51,7 @@ export default function Homepage() {
             </section>
 
             <section id="my-work" className="w-full w-wrapper">
-                
+                <MyWork/>
             </section>
 
         </>
