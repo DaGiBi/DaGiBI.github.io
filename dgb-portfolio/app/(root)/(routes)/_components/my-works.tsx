@@ -1,8 +1,9 @@
-
+"use-client";
 import 'swiper/css';
 import 'swiper/css/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore , {Autoplay, Pagination } from 'swiper';
+import SwiperCore from 'swiper';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { mywork } from '@/helpers/constant';
 function MyWork() {
 
@@ -38,13 +39,13 @@ function MyWork() {
                 modules={[Pagination]}
             >
                       
-                {/* {mywork.map((feature, idx) => (
+                {mywork.map((feature, idx) => (
                     <SwiperSlide key={idx} className='
                     flex item-centers justify-center w-full'>
                         <div className='flex flex-col lg:flex-row item-centers justify-center  bg-primary rounded-[2rem] lg:rounded-[2.5rem]  px-5 lg:px-6  h-[310px] max-w-max lg:h-[200px] shadow-[-5px_-5px_0px_#0A3B5B] mx-auto mt-2 mb-14'>
                             <div className='flex items-center justify-center'>
                                 <div className="relative text-white text-[27px] leading-9">
-                                    <span className="inline-block text-left mr-2">  */}
+                                    <span className="inline-block text-left mr-2">
                                         {/* {feature.headline} */}
                                         {/* <Dialog>
                                             <DialogTrigger>
@@ -70,25 +71,36 @@ function MyWork() {
                                             </DialogHeader>
                                             </DialogContent>
                                         </Dialog> */}
-                                    {/* </span>
+                                    </span>
                                 </div>
                             </div>
-                            <div className='flex items-center justify-end lg:ml-10 '> */}
+                            <div className='flex items-center justify-end lg:ml-10 '>
                                 {/* <img
                                     src={`/images/products/motor-aggregator/why-senang/${feature.icon}.svg`}
                                     alt=''
                                     className='h-[8rem] lg:h-[8rem] w-[8rem] lg:w-[8rem]'
                                 />  */}
-                            {/* </div>
+                            </div>
                         </div>
                     </SwiperSlide>
             ))} 
-            <div className="swiper-pagination"/>*/}
-        </Swiper> 
-        </div> 
+            <div className="swiper-pagination"/>
+        </Swiper>
+        </div>
      );
 }
 
 export default MyWork;
 
+
+// import { whySenang } from '~/helpers/constants';
+
+// import {
+//     Dialog,
+//     DialogContent,
+//     DialogDescription,
+//     DialogHeader,
+//     DialogTitle,
+//     DialogTrigger,
+// } from "@/src/components/ui/Dialog";
 

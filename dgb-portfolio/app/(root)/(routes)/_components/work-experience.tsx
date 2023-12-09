@@ -5,9 +5,9 @@ function WorkExperience() {
     return ( 
         <div id="" className="flex-col items-center justify-center px-5 space-y-4">
             <div className="relative bg-primary-50 rounded-xl p-5">
-                <div className="rounded-full bg-white p-1 absolute top-3 left-[-67px] z-10">
+                <div className="rounded-full bg-white p-1 absolute top-3 left-[-67px] z-10 hover:translate-y-[-10px] hover:scale-110 transition-transform duration-300 ease-in-out">
                     <Image
-                        src="/sophic.png"
+                        src="/veecotech.jpeg"
                         alt="Company Logo"
                         width={50}
                         height={50}
@@ -42,9 +42,9 @@ function WorkExperience() {
 
             </div>
             <div className="relative bg-primary-50 rounded-xl p-5">
-            <div className="rounded-full bg-white p-1 absolute top-3 left-[-67px] z-10">
+            <div className="rounded-full bg-white p-1 absolute top-3 left-[-67px] z-10 hover:translate-y-[-10px] hover:scale-110 transition-transform duration-300 ease-in-out">
                     <Image
-                        src="/veecotech.jpeg"
+                        src="/sophic.png"
                         alt="Company Logo"
                         width={50}
                         height={50}

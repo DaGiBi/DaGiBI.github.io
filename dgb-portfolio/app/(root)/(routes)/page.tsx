@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image"
 import SkillPanel from "./_components/skill-panel";
 import WorkExperience from "./_components/work-experience";
