@@ -28,6 +28,22 @@ export const mywork = [
                 alt: "",
             },
         ],
-        link: "",
+        link: "https://app.powerbi.com/view?r=eyJrIjoiZGM4NWE2MjAtNTY4YS00YjFjLWI4ZDgtMzY1NmI4YmY2NDFiIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf22ebba3960b9e54e938",
+        download: "",
+    },
+    {
+        title: "Sentiment Analysis on Tesla Reviews",
+        description: "Sentiment analysis done on Tesla cars review using data mining and few sentiment  analysis modelings method and The study aims to uncover customer sentiment, highlight areas for improvement, and inform strategic decision-making within Tesla.",
+        features: [
+            "Visaulize and analyze sales report for games on Steam Store.",
+        ],
+        images: [
+            {
+                src: "",
+                alt: "",
+            },
+        ],
+        link: "https://app.powerbi.com/view?r=eyJrIjoiZGM4NWE2MjAtNTY4YS00YjFjLWI4ZDgtMzY1NmI4YmY2NDFiIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf22ebba3960b9e54e938",
+        download: "",
     }
 ]
