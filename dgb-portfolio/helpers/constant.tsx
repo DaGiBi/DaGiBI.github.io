@@ -10,11 +10,43 @@ export const mywork = [
         ],
         images: [
             {
-                src: "",
-                alt: "",
+                src: "/images/projects/hfmd/login.jpg",
+                alt: "login",
+            },
+            {
+                src: "/images/projects/hfmd/home.jpg",
+                alt: "home",
+            },
+            {
+                src: "/images/projects/hfmd/diagnosis.jpg",
+                alt: "diagnosis",
+            },
+            {
+                src: "/images/projects/hfmd/prediction.jpg",
+                alt: "prediction",
+            },
+            {
+                src: "/images/projects/hfmd/result.jpg",
+                alt: "result",
+            },
+            {
+                src: "/images/projects/hfmd/hotspot.jpg",
+                alt: "hotspot",
+            },
+            {
+                src: "/images/projects/hfmd/hotspot track.jpg",
+                alt: "hotspot track",
+            },
+            {
+                src: "/images/projects/hfmd/analytic.jpg",
+                alt: "analytic",
+            },
+            {
+                src: "/images/projects/hfmd/info.jpg",
+                alt: "info",
             },
         ],
-        link: "",
+        link: "https://github.com/DaGiBi/hfmd_app",
     },
     {
         title: "Steam Store Game Sales Report",
@@ -24,8 +56,20 @@ export const mywork = [
         ],
         images: [
             {
-                src: "",
-                alt: "",
+                src: "images/projects/steam-sales/home.png",
+                alt: "home",
+            },
+            {
+                src: "images/projects/steam-sales/game.png",
+                alt: "game",
+            },
+            {
+                src: "images/projects/steam-sales/sale.png",
+                alt: "sale",
+            },
+            {
+                src: "images/projects/steam-sales/platform.png",
+                alt: "platform",
             },
         ],
         link: "https://app.powerbi.com/view?r=eyJrIjoiZGM4NWE2MjAtNTY4YS00YjFjLWI4ZDgtMzY1NmI4YmY2NDFiIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf22ebba3960b9e54e938",
@@ -35,12 +79,20 @@ export const mywork = [
         title: "Sentiment Analysis on Tesla Reviews",
         description: "Sentiment analysis done on Tesla cars review using data mining and few sentiment  analysis modelings method and The study aims to uncover customer sentiment, highlight areas for improvement, and inform strategic decision-making within Tesla.",
         features: [
-            "Visaulize and analyze sales report for games on Steam Store.",
+            "Implementing data mining, rapid miner and sentiment analysis on Tesla reviews.",
         ],
         images: [
             {
-                src: "",
-                alt: "",
+                src: "images/projects/tesla/compare.png",
+                alt: "compare",
+            },
+            {
+                src: "images/projects/tesla/design.png",
+                alt: "compare",
+            },
+            {
+                src: "images/projects/tesla/word cloud.png",
+                alt: "word",
             },
         ],
         link: "https://app.powerbi.com/view?r=eyJrIjoiZGM4NWE2MjAtNTY4YS00YjFjLWI4ZDgtMzY1NmI4YmY2NDFiIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf22ebba3960b9e54e938",
