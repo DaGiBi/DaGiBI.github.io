@@ -56,19 +56,19 @@ export const mywork = [
         ],
         images: [
             {
-                src: "images/projects/steam-sales/home.png",
+                src: "/images/projects/steam-sales/home.png",
                 alt: "home",
             },
             {
-                src: "images/projects/steam-sales/game.png",
+                src: "/images/projects/steam-sales/game.png",
                 alt: "game",
             },
             {
-                src: "images/projects/steam-sales/sale.png",
+                src: "/images/projects/steam-sales/sale.png",
                 alt: "sale",
             },
             {
-                src: "images/projects/steam-sales/platform.png",
+                src: "/images/projects/steam-sales/platform.png",
                 alt: "platform",
             },
         ],
@@ -83,15 +83,15 @@ export const mywork = [
         ],
         images: [
             {
-                src: "images/projects/tesla/compare.png",
+                src: "/images/projects/tesla/compare.png",
                 alt: "compare",
             },
             {
-                src: "images/projects/tesla/design.png",
+                src: "/images/projects/tesla/design.png",
                 alt: "compare",
             },
             {
-                src: "images/projects/tesla/word cloud.png",
+                src: "/images/projects/tesla/word cloud.png",
                 alt: "word",
             },
         ],
