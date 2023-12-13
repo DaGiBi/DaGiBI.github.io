@@ -13,11 +13,11 @@ function MyWork() {
     SwiperCore.use([Autoplay]);
     SwiperCore.use([Pagination]);
     return ( 
-        <div className="flex items-center justify-center">
+        <div className="">
                 <Swiper 
-            slidesPerView={1.1}
+            slidesPerView={1}
             spaceBetween={10}
-       
+            navigation={true}
             direction='horizontal'
             centeredSlides={true}
         
@@ -26,39 +26,43 @@ function MyWork() {
                       
                 {mywork.map((project, idx) => (
                     <SwiperSlide key={idx} className='
-                    flex item-centers justify-center w-full  h-auto '>
-                        <div className='flex flex-row item-centers justify-center  bg-secondary  max-w-max'>
+                    flex item-centers justify-center w-full  '>
+                        <div className='flex flex-row item-center justify-center mx-auto bg-secondary h-[350px] max-w-[75%] px-5'>
                             <div className='flex items-center justify-center'>
                                 <div className="relative text-white text-[27px] leading-9">
                                        {project.title}
                                
                                 </div>
                             </div>
-                            <div className=' flex flex-1 items-center justify-center '>
-
-                            {/* <Swiper
+                            <div className='flex flex-col items-center justify-center m-auto max-h-[90%] '>
+                                 <Swiper
                                 className=""
                                 direction={'vertical'}
-                                spaceBetween={50}
+                                spaceBetween={25}
+                                centeredSlides={true}
                                 pagination={{
-                                clickable: true,
+                                    clickable: true,
                                 }}
                                 modules={[Pagination]}
                             >
                               {project.images.map((images, idx2) => (
-                                <SwiperSlide key={idx2} className=''
+                                  <SwiperSlide key={idx2} className='
+                                  flex item-centers justify-center w-full h-full'
                                 >
+                                <div className="flex flex-row items-center justify-center my-auto">
                                        <Image
                                     src={`${images.src}`}
                                     alt={`${images.alt}`}
-                                    width={100}
-                                    height={100}
+                                    width={300}
+                                    height={300}
                                     className=''
                                 /> 
+                              </div>
                                     
                                 </SwiperSlide>
                               ))}
-                            </Swiper> */}
+                            </Swiper>
+                           
 
 
                              

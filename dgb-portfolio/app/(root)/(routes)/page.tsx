@@ -51,7 +51,7 @@ export default function Homepage() {
                 <SkillPanel/>
             </section>
 
-            <section id="my-work" className="w-full w-wrapper">
+            <section id="my-work" className="w-full w-wrapper my-5">
                 <MyWork/>
             </section>
 
