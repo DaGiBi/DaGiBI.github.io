@@ -8,7 +8,7 @@ const HomepageLayout = ({
   }) => {
     return ( 
       <div className="h-screen">
-        <main className="flex flex-col min-h-screen justify-between">
+        <main className="flex flex-col min-h-screen justify-between radius-large">
           <Header />
           {children}
           <Footer/>

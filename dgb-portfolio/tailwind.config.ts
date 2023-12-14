@@ -53,7 +53,7 @@ const config: Config = {
     {
       prefix: "nextui", // prefix for themes variables
       addCommonColors: false, // override common colors (e.g. "blue", "green", "pink").
-      defaultTheme: "purple-dark", // default theme from the themes object
+      defaultTheme: "purple", // default theme from the themes object
       defaultExtendTheme: "dark", // default theme to extend on custom themes
       layout: {
         disabledOpacity: "0.3", // opacity-[0.3]
@@ -89,23 +89,23 @@ const config: Config = {
             }
           }, // dark theme colors
         },
-        "purple-dark": {
+        "purple": {
           extend: "dark", // <- inherit default values from dark theme
           colors: {
             background: "#0D001A",
             foreground: "#ffffff",
             primary: {
-              50: "#3B096C",
-              100: "#520F83",
-              200: "#7318A2",
-              300: "#9823C2",
-              400: "#c031e2",
-              500: "#DD62ED",
-              600: "#F182F6",
-              700: "#FCADF9",
-              800: "#FDD5F9",
-              900: "#FEECFE",
-              DEFAULT: "#DD62ED",
+              50: "#F2EAFA",
+              100: "#E4D4F4",
+              200: "#C9A9E9",
+              300: "#AE7EDE",
+              400: "#9353D3",
+              500: "#7828C8",
+              600: "#6020A0",
+              700: "#481878",
+              800: "#301050",
+              900: "#180828",
+              DEFAULT: "#18181B",
               foreground: "#ffffff",
             },
             focus: "#F182F6",

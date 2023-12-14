@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function WorkExperience() {
     return ( 
-        <div id="" className="flex-col items-center justify-center px-5 space-y-4">
-            <div className="relative bg-primary-50 rounded-xl p-5">
-                <div className="rounded-full bg-white p-1 absolute top-3 left-[-67px] z-10 hover:translate-y-[-10px] hover:scale-110 transition-transform duration-300 ease-in-out">
+        <div id="" className="flex-col items-center justify-center px-5 space-y-10 ml-2">
+            <div className="relative bg-primary-800 rounded-xl p-5">
+                <div className="rounded-full bg-white p-1 absolute top-3 left-[-75px] z-10 hover:translate-y-[-10px] hover:scale-110 transition-transform duration-300 ease-in-out">
                     <Image
                         src="/veecotech.jpeg"
                         alt="Company Logo"
@@ -23,6 +23,7 @@ function WorkExperience() {
                         Veecotech
                     </p>
                 </div>
+
                 <ul className="list-inside px-2">
                     <li className="before:content-['\2022'] before:mr-2">
                         Developing and maintaining company mobile application using Flutter for android and iOS devices.
@@ -41,8 +42,8 @@ function WorkExperience() {
             
 
             </div>
-            <div className="relative bg-primary-50 rounded-xl p-5">
-            <div className="rounded-full bg-white p-1 absolute top-3 left-[-67px] z-10 hover:translate-y-[-10px] hover:scale-110 transition-transform duration-300 ease-in-out">
+            <div className="relative bg-primary-800 rounded-xl p-5">
+            <div className="rounded-full bg-white p-1 absolute top-3 left-[-75px] z-10 hover:translate-y-[-10px] hover:scale-110 transition-transform duration-300 ease-in-out">
                     <Image
                         src="/sophic.png"
                         alt="Company Logo"
@@ -59,7 +60,7 @@ function WorkExperience() {
                         Sophic Automation Sdn. Bhd.
                     </p>
                 </div>
-                <ul className="list-inside px-2">
+                <ul className="list-inside px-2 text-left  font-serif font-medium">
                     <li className="before:content-['\2022']">
                         Developing and maintaining company mobile application using Flutter for android and iOS devices.
                     </li>

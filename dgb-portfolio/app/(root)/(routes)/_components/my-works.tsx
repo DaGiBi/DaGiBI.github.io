@@ -27,7 +27,7 @@ function MyWork() {
                 {mywork.map((project, idx) => (
                     <SwiperSlide key={idx} className='
                     flex item-centers justify-center w-full  '>
-                        <div className='flex flex-row item-center justify-center mx-auto bg-secondary h-[350px] max-w-[75%] px-5'>
+                        <div className='flex flex-row item-center justify-center mx-auto bg-secondary h-[350px] max-w-[75%] px-5 rounded-md'>
                             <div className='flex items-center justify-center'>
                                 <div className="relative text-white text-[27px] leading-9">
                                        {project.title}
@@ -49,15 +49,20 @@ function MyWork() {
                                   <SwiperSlide key={idx2} className='
                                   flex item-centers justify-center w-full h-full'
                                 >
-                                <div className="flex flex-row items-center justify-center my-auto">
-                                       <Image
+                                <div className="relative flex flex-row items-center justify-center my-auto h-full w-[250px] bg-primary-700 rounded-md py-2">
+                                    <Image
                                     src={`${images.src}`}
                                     alt={`${images.alt}`}
-                                    width={300}
-                                    height={300}
                                     className=''
+                                    sizes="500px"
+                                    fill
+                                    style={{
+                                      objectFit: 'contain',
+                                    }}
                                 /> 
-                              </div>
+                                    </div>
+                                      
+                              
                                     
                                 </SwiperSlide>
                               ))}

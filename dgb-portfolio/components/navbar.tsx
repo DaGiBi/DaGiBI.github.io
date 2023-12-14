@@ -22,7 +22,7 @@ export default function NavBar() {
         "Blog",
       ];
     return ( 
-        <Navbar onMenuOpenChange={setIsMenuOpen} className="top-4">
+        <Navbar onMenuOpenChange={setIsMenuOpen} className="top-4 mb-10">
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
