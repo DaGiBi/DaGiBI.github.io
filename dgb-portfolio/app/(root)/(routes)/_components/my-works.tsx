@@ -14,6 +14,18 @@ function MyWork() {
     SwiperCore.use([Pagination]);
     return ( 
         <div className="">
+
+                <div className="flex flex-col items-center justify-center px-10">
+                    <div className="flex flex-col items-center justify-center py-5">
+                        <h1 className="text-4xl font-bold">
+                           Projects
+                        </h1>
+                        <p>
+                            I`ve worked on...
+                        </p>
+                    </div>
+                </div>
+
                 <Swiper 
             slidesPerView={1}
             spaceBetween={10}

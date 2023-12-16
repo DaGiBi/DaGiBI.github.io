@@ -2,6 +2,8 @@ import Image from "next/image"
 function SkillPanel() {
     return ( 
         <div className="flex flex-wrap justify-center mx-auto px-5">
+
+         
     <div className="flex items-center justify-center p-5 hover:translate-y-[-10px] hover:scale-150 transition-transform duration-300 ease-in-out">
       <Image src="/icons/flutter.svg" alt="Dart Flutter" width={60} height={60} className="skill-icon " />
     </div>
