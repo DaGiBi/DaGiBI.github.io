@@ -8,7 +8,7 @@ body,
 :root {
   height: 100%;
 }
-/* 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -21,7 +21,7 @@ body,
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-} */
+}
 
 @layer utilities {
   .w-wrapper {
@@ -40,13 +40,13 @@ body {
   border-radius: 50px;
 
   
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 body::before{

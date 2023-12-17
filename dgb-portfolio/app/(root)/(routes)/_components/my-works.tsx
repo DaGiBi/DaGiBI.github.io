@@ -6,14 +6,14 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { mywork } from '@/helpers/constant';
 function MyWork() {
 
     SwiperCore.use([Autoplay]);
     SwiperCore.use([Pagination]);
     return ( 
-        <div className="">
+        <div className="flex flex-col items-center justify-center w-full">
 
                 <div className="flex flex-col items-center justify-center px-10">
                     <div className="flex flex-col items-center justify-center py-5">
@@ -25,26 +25,36 @@ function MyWork() {
                         </p>
                     </div>
                 </div>
+                <div className="w-full ">
 
+                
                 <Swiper 
+             
             slidesPerView={1}
             spaceBetween={10}
             navigation={true}
             direction='horizontal'
             centeredSlides={true}
         
-                modules={[Pagination]}
+                modules={[Pagination, Navigation]}
             >
                       
                 {mywork.map((project, idx) => (
                     <SwiperSlide key={idx} className='
                     flex item-centers justify-center w-full  '>
-                        <div className='flex flex-row item-center justify-center mx-auto bg-secondary h-[350px] max-w-[75%] px-5 rounded-md'>
-                            <div className='flex items-center justify-center'>
-                                <div className="relative text-white text-[27px] leading-9">
+                        <div className='flex flex-row item-center justify-center mx-auto bg-primary-100 h-[350px] max-w-[75%] px-5 rounded-md gap-14'>
+                            <div className='flex flex-col items-center justify-center'>
+                                <div className="relative text-black text-3xl font-bold">
                                        {project.title}
                                
                                 </div>
+                                {project.features.map((feature, idx2) => (
+                                <div key={idx2} className="relative text-black text-sm font-bold">
+                                    {feature}
+                                      
+                               
+                                </div>
+                                ))}
                             </div>
                             <div className='flex flex-col items-center justify-center m-auto max-h-[90%] '>
                                  <Swiper
@@ -61,7 +71,7 @@ function MyWork() {
                                   <SwiperSlide key={idx2} className='
                                   flex item-centers justify-center w-full h-full'
                                 >
-                                <div className="relative flex flex-row items-center justify-center my-auto h-full w-[250px] bg-primary-700 rounded-md py-2">
+                                <div className="relative flex flex-row items-center justify-center my-auto h-full w-[250px] bg-primary-50 rounded-md py-2">
                                     <Image
                                     src={`${images.src}`}
                                     alt={`${images.alt}`}
@@ -79,9 +89,6 @@ function MyWork() {
                                 </SwiperSlide>
                               ))}
                             </Swiper>
-                           
-
-
                              
                             </div>
                         </div>
@@ -89,6 +96,7 @@ function MyWork() {
             ))} 
             <div className="swiper-pagination"/>
         </Swiper>
+        </div>
         </div>
      );
 }

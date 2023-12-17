@@ -22,32 +22,34 @@ export default function NavBar() {
         "Blog",
       ];
     return ( 
-        <Navbar onMenuOpenChange={setIsMenuOpen} className="top-4">
+        <Navbar 
+        // onMenuOpenChange={setIsMenuOpen} 
+        className="top-4">
         <NavbarContent>
-          <NavbarMenuToggle
+          {/* <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             className=""
-          />
+          /> */}
           <NavbarBrand>
             {/* <AcmeLogo /> */}
             <p className="font-bold text-inherit">DGB</p>
           </NavbarBrand>
         </NavbarContent>
   
-        {/* <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarContent className="hidden sm:flex gap-14" justify="center">
           <NavbarItem>
             <Link color="foreground" href="#">
-              Features
+              About Me
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
             <Link href="#" aria-current="page">
-              Customers
+              My Experience
             </Link>
           </NavbarItem>
           <NavbarItem>
             <Link color="foreground" href="#">
-              Integrations
+              My Works
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -57,10 +59,10 @@ export default function NavBar() {
           </NavbarItem>
           <NavbarItem>
             <Button as={Link} color="primary" href="#" variant="flat">
-              Sign Up
+              Hire Me
             </Button>
           </NavbarItem>
-        </NavbarContent> */}
+        </NavbarContent>
         <NavbarMenu className="mx-4 !w-auto ">
           {menuItems.map((item, index) => (
             <NavbarMenuItem className="py-2" key={`${item}-${index}`}>

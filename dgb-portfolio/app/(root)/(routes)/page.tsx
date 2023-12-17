@@ -7,7 +7,7 @@ import MyWork from "./_components/my-works";
 export default function Homepage() {
     return (  
         <>
-            <section id="introduction" className="w-wrapper w-full  h-[85vh] flex flex-col justify-center ">
+            <section id="introduction" className="w-wrapper w-full  h-[88vh] flex flex-col justify-center ">
                 <div className="flex flex-col-reverse sm:flex-row items-center justify-between mx-auto  gap-x-36">
                     <div className="flex flex-2 items-center justify-center rounded-md">
                         <text>
@@ -56,7 +56,7 @@ export default function Homepage() {
                 </div>
                 <SkillPanel/>
             </section>
-            <section id="my-work" className="w-full w-wrapper h-screen my-10">
+            <section id="my-work" className="flex item-center justify-center w-full w-wrapper h-screen">
                 <MyWork/>
             </section>
 
