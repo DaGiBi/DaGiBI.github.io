@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 
+import Image from "next/image"
 import {
     Navbar, 
     NavbarBrand, 
@@ -30,8 +31,15 @@ export default function NavBar() {
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             className=""
           /> */}
-          <NavbarBrand>
+          <NavbarBrand className="gap-2">
             {/* <AcmeLogo /> */}
+            <Image
+                            className="rounded-lg"
+                            src={"/profile.jpg"}
+                            alt="Picture of the author"
+                            width={20}
+                            height={20}
+                        />
             <p className="font-bold text-inherit">DGB</p>
           </NavbarBrand>
         </NavbarContent>

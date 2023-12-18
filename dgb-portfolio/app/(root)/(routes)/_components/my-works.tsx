@@ -18,7 +18,10 @@ function MyWork() {
                 <div className="flex flex-col items-center justify-center px-10">
                     <div className="flex flex-col items-center justify-center py-5">
                         <h1 className="text-4xl font-bold">
-                           Projects
+                           My 
+                           <span className="font-bold text-primary-100">
+                                &nbsp;Projects
+                            </span>
                         </h1>
                         <p>
                             I`ve worked on...

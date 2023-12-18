@@ -7,33 +7,67 @@ import MyWork from "./_components/my-works";
 export default function Homepage() {
     return (  
         <>
-            <section id="introduction" className="w-wrapper w-full  h-[88vh] flex flex-col justify-center ">
-                <div className="flex flex-col-reverse sm:flex-row items-center justify-between mx-auto  gap-x-36">
-                    <div className="flex flex-2 items-center justify-center rounded-md">
+            <section id="introduction" className="w-wrapper h-screen">
+                <div className="flex items-center justify-center mx-auto h-[75%]">
+                    <div className="flex flex-col items-center justify-center h-full gap-4">
                         <text>
-                            <h1 className="text-5xl font-bold">Hi, my name Najib</h1>
-                            <h2 className="text-2xl  font-semibold">I`m an Developer from Malaysia</h2>
+                            <h1 className="text-5xl font-bold">Hi, I`m 
+                                <span className="font-bold text-primary-100">
+                                &nbsp;Najib
+                                </span>
+                            </h1>
+                            <h2 className="text-2xl  font-semibold">I`m Full-Stack Web Developer</h2>
                         </text>
-                    </div>
-                    <div className="flex flex-2 item bg-center justify-center">
-                        <Image
-                            className=" rounded-lg"
-                            src={"/profile.jpg"}
-                            alt="Picture of the author"
-                            width={200}
-                            height={200}
-                        />
+                        <div className="flex items-center justify-center bg-primary-300 h-16 w-52 rounded-xl border-primary-100 border-3">
+                            <text className="text-2xl font-bold text-primary-100 ">
+                                My Works...
+                            </text>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section id="work-experience" className="w-wrapper w-full">
+
+            <section id="introduction" className="w-wrapper bg-primary-100">
+                <div className="flex items-center justify-center mx-auto h-[75%] py-20">
+                    <div className="flex flex-col items-center justify-center h-full gap-5 w-[70%]">
+                        <div className="">
+                            <text className="text-black font-bold text-2xl">
+                                About Me
+                            </text>
+                        </div>
+                        <div className="">
+                            <text className="text-black text-xl  font-normal">
+                            Welcome to my portfolio. I`m Najib btw 👋🏻 ... Full Stack Developer. Graduated from University Technology MARA (UiTM) in Computer Science. 🎓My world revolves around crafting seamless experiences with Flutter for mobile and Next.js for web. 💻 Exploring the intersection of design and technology, I bring innovation to life. 
+                            </text>
+                        </div>
+                        <div className="flex items-center justify-centers gap-4">
+                            <div className="flex items-center justify-center bg-primary-300 h-12 w-40 rounded-xl border-primary-100 border-3">
+                                    Resume
+                            </div>
+                            <div className="flex items-center justify-center bg-primary-300 h-12 w-40 rounded-xl border-primary-100 border-3">
+                                    Github
+                            </div>
+                            <div className="flex items-center justify-center bg-primary-300 h-12 w-40 rounded-xl border-primary-100 border-3">
+                                    LinkedIn
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </section>
+
+            <section id="work-experience" className="w-wrapper w-full my-10">
                 <div className="flex flex-col items-center justify-center px-10">
                     <div className="flex flex-col items-center justify-center py-5">
                         <h1 className="text-4xl font-bold">
-                            Work Experience
+                            Work 
+                            <span className="font-bold text-primary-100">
+                                &nbsp;Experience
+                                </span>
                         </h1>
                         <p>
-                            What I`ve done so far`
+                            What I`ve done so far...
                         </p>
                     </div>
                     <div id="" className="flex-col items-center justify-center border-l-2 pl-4 
@@ -43,20 +77,20 @@ export default function Homepage() {
                 </div>
                 
             </section>
-            <section id="skill" className="w-wrapper my-10">
+            <section id="skill" className="w-wrapper w-full my-20 bg-primary-100">
                 <div className="flex flex-col items-center justify-center px-10">
                     <div className="flex flex-col items-center justify-center py-5">
-                        <h1 className="text-4xl font-bold">
+                        <h1 className="text-4xl font-bold text-black">
                             Skills
                         </h1>
-                        <p>
+                        <p className="text-black font-medium">
                             Some skills I`ve picked up along the way...
                         </p>
                     </div>
                 </div>
                 <SkillPanel/>
             </section>
-            <section id="my-work" className="flex item-center justify-center w-full w-wrapper h-screen">
+            <section id="my-work" className="flex item-center justify-center w-full w-wrapper my-32">
                 <MyWork/>
             </section>
 
