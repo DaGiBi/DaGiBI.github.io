@@ -97,3 +97,54 @@ export const mywork = [
         ],
     }
 ]
+
+export const skills = [
+    {
+        name: "Flutter",
+        icon: "flutter.svg",
+    },
+    {
+        name: "React Native",
+        icon: "react-native.svg",
+    },
+    {
+        name: "JavaScript",
+        icon: "js.svg",
+    },
+    {
+        name: "Node.js",
+        icon: "nodejs.svg",
+    },
+    {
+        name: "Next.js",
+        icon: "nextjs.svg",
+    },
+    {
+        name: "Python",
+        icon: "python.svg",
+    },
+    {
+        name: "Laravel",
+        icon: "laravel.svg",
+    },
+    {
+        name: "MySQL",
+        icon: "mysql.svg",
+    },
+    {
+        name: "MongoDB",
+        icon: "mongo.svg",
+    },
+    {
+        name: "Tailwind",
+        icon: "tailwind.svg",
+    },
+    {
+        name: "HTML",
+        icon: "html.svg",
+    },
+    {
+        name: "CSS",
+        icon: "css.svg",
+    },
+]

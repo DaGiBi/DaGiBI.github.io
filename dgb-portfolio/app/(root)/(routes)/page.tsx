@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image"
+import {Button} from "@nextui-org/react";
 import SkillPanel from "./_components/skill-panel";
 import WorkExperience from "./_components/work-experience";
 import MyWork from "./_components/my-works";
@@ -18,11 +19,12 @@ export default function Homepage() {
                             </h1>
                             <h2 className="text-2xl  font-semibold">I`m Full-Stack Web Developer</h2>
                         </text>
-                        <div className="flex items-center justify-center bg-primary-300 p-4 rounded-xl border-primary-100 border-3">
+                        <Button className="flex items-center justify-center p-6"
+                        color="primary" variant="ghost">
                             <text className="text-2xl font-bold text-primary-100 ">
                                 My Works...
                             </text>
-                        </div>
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -41,15 +43,15 @@ export default function Homepage() {
                             </text>
                         </div>
                         <div className="flex items-center  justify-centers gap-4">
-                            <div className="flex items-center justify-center bg-primary-300 p-3 rounded-xl border-primary-100 border-3">
+                            <Button className="flex items-center justify-center text-black font-semibold" color="primary" variant="ghost">
                                     Resume
-                            </div>
-                            <div className="flex items-center justify-center bg-primary-300 p-3 rounded-xl border-primary-100 border-3">
+                            </Button>
+                            <Button className="flex items-center justify-center text-black font-semibold" color="primary" variant="ghost">
                                     Github
-                            </div>
-                            <div className="flex items-center justify-center bg-primary-300 p-3 rounded-xl border-primary-100 border-3">
+                            </Button>
+                            <Button className="flex items-center justify-center text-black font-semibold" color="primary" variant="ghost">
                                     LinkedIn
-                            </div>
+                            </Button>
                         </div>
                         
                        
@@ -93,9 +95,9 @@ export default function Homepage() {
             <section id="my-work" className="flex item-center justify-center w-full w-wrapper my-32">
                 <MyWork/>
             </section>
-            <section id="contact-me" className="flex item-center justify-center w-full w-wrapper my-32">
+            {/* <section id="contact-me" className="flex item-center justify-center w-full w-wrapper my-32">
                 contact-me
-            </section>
+            </section> */}
 
         </>
        

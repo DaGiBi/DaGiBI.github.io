@@ -2,6 +2,8 @@
 "use-client";
 
 import Image from "next/image"
+
+import {Button} from "@nextui-org/react";
 import 'swiper/css';
 import 'swiper/css/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -58,14 +60,16 @@ function MyWork() {
                                 </div>
                                 <div className=" flex items-center justify-center  absolute right-0 bottom-10 gap-4 ">
                                     {project.preview != null ? (
-                                        <div className="bg-primary-200 p-2 rounded-lg">
+                                        <Button className="text-black font-semibold" color="primary"
+                                        variant="ghost">
                                             Preview
-                                        </div>
+                                        </Button>
                                     ) : null}
                                     {project.github != null ? (
-                                        <div className="bg-primary-200 p-2 rounded-lg">
+                                        <Button className="text-black font-semibold"  color="primary"
+                                        variant="ghost">
                                             Github
-                                        </div>
+                                        </Button>
                                     ) : null}
                                 </div>
                             </div>
