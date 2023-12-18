@@ -18,7 +18,7 @@ export default function Homepage() {
                             </h1>
                             <h2 className="text-2xl  font-semibold">I`m Full-Stack Web Developer</h2>
                         </text>
-                        <div className="flex items-center justify-center bg-primary-300 h-16 w-52 rounded-xl border-primary-100 border-3">
+                        <div className="flex items-center justify-center bg-primary-300 p-4 rounded-xl border-primary-100 border-3">
                             <text className="text-2xl font-bold text-primary-100 ">
                                 My Works...
                             </text>
@@ -40,14 +40,14 @@ export default function Homepage() {
                             Welcome to my portfolio. I`m Najib btw 👋🏻 ... Full Stack Developer. Graduated from University Technology MARA (UiTM) in Computer Science. 🎓My world revolves around crafting seamless experiences with Flutter for mobile and Next.js for web. 💻 Exploring the intersection of design and technology, I bring innovation to life. 
                             </text>
                         </div>
-                        <div className="flex items-center justify-centers gap-4">
-                            <div className="flex items-center justify-center bg-primary-300 h-12 w-40 rounded-xl border-primary-100 border-3">
+                        <div className="flex items-center  justify-centers gap-4">
+                            <div className="flex items-center justify-center bg-primary-300 p-3 rounded-xl border-primary-100 border-3">
                                     Resume
                             </div>
-                            <div className="flex items-center justify-center bg-primary-300 h-12 w-40 rounded-xl border-primary-100 border-3">
+                            <div className="flex items-center justify-center bg-primary-300 p-3 rounded-xl border-primary-100 border-3">
                                     Github
                             </div>
-                            <div className="flex items-center justify-center bg-primary-300 h-12 w-40 rounded-xl border-primary-100 border-3">
+                            <div className="flex items-center justify-center bg-primary-300 p-3 rounded-xl border-primary-100 border-3">
                                     LinkedIn
                             </div>
                         </div>
@@ -92,6 +92,9 @@ export default function Homepage() {
             </section>
             <section id="my-work" className="flex item-center justify-center w-full w-wrapper my-32">
                 <MyWork/>
+            </section>
+            <section id="contact-me" className="flex item-center justify-center w-full w-wrapper my-32">
+                contact-me
             </section>
 
         </>

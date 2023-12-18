@@ -46,7 +46,8 @@ export const mywork = [
                 alt: "info",
             },
         ],
-        link: "https://github.com/DaGiBi/hfmd_app",
+        github: "https://github.com/DaGiBi/hfmd_app",
+        preview: "",
     },
     {
         title: "Steam Store Game Sales Report",
@@ -72,8 +73,7 @@ export const mywork = [
                 alt: "platform",
             },
         ],
-        link: "https://app.powerbi.com/view?r=eyJrIjoiZGM4NWE2MjAtNTY4YS00YjFjLWI4ZDgtMzY1NmI4YmY2NDFiIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf22ebba3960b9e54e938",
-        download: "",
+        preview: "https://app.powerbi.com/view?r=eyJrIjoiZGM4NWE2MjAtNTY4YS00YjFjLWI4ZDgtMzY1NmI4YmY2NDFiIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf22ebba3960b9e54e938",
     },
     {
         title: "Sentiment Analysis on Tesla Reviews",
@@ -95,7 +95,5 @@ export const mywork = [
                 alt: "word",
             },
         ],
-        link: "https://app.powerbi.com/view?r=eyJrIjoiZGM4NWE2MjAtNTY4YS00YjFjLWI4ZDgtMzY1NmI4YmY2NDFiIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf22ebba3960b9e54e938",
-        download: "",
     }
 ]

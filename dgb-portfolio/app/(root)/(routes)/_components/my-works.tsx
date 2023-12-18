@@ -35,29 +35,39 @@ function MyWork() {
              
             slidesPerView={1}
             spaceBetween={10}
-            navigation={true}
+            pagination={{
+                clickable: true,
+            }}
             direction='horizontal'
             centeredSlides={true}
-        
-                modules={[Pagination, Navigation]}
+                modules={[Pagination]}
             >
                       
                 {mywork.map((project, idx) => (
                     <SwiperSlide key={idx} className='
                     flex item-centers justify-center w-full  '>
-                        <div className='flex flex-row item-center justify-center mx-auto bg-primary-100 h-[350px] max-w-[75%] px-5 rounded-md gap-14'>
-                            <div className='flex flex-col items-center justify-center'>
+                        <div className='flex flex-row item-center justify-center mx-auto bg-primary-100 h-[350px] max-w-[85%] px-5 rounded-md gap-14'>
+                            <div className='relative flex flex-col items-center justify-center space-y-4'>
                                 <div className="relative text-black text-3xl font-bold">
                                        {project.title}
-                               
+
                                 </div>
-                                {project.features.map((feature, idx2) => (
-                                <div key={idx2} className="relative text-black text-sm font-bold">
-                                    {feature}
-                                      
-                               
+                              
+                                <div className="relative  text-black text-sm font-bold">
+                                    {project.description}
                                 </div>
-                                ))}
+                                <div className=" flex items-center justify-center  absolute right-0 bottom-10 gap-4 ">
+                                    {project.preview != null ? (
+                                        <div className="bg-primary-200 p-2 rounded-lg">
+                                            Preview
+                                        </div>
+                                    ) : null}
+                                    {project.github != null ? (
+                                        <div className="bg-primary-200 p-2 rounded-lg">
+                                            Github
+                                        </div>
+                                    ) : null}
+                                </div>
                             </div>
                             <div className='flex flex-col items-center justify-center m-auto max-h-[90%] '>
                                  <Swiper
@@ -97,7 +107,7 @@ function MyWork() {
                         </div>
                     </SwiperSlide>
             ))} 
-            <div className="swiper-pagination"/>
+            <div className="swiper-pagination"></div>
         </Swiper>
         </div>
         </div>
