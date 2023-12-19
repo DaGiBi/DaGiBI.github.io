@@ -61,7 +61,7 @@ export default function NavBar() {
 
             <NavbarItem key={idx} isActive={path
             +nav.href === nav.href}>
-              <Link color="foreground" href={nav.href} onClick={() => console.log(path)}  >
+              <Link color="foreground" href={nav.href} >
                 {nav.name}
               </Link>
             </NavbarItem>

@@ -10,13 +10,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { mywork } from '@/helpers/constant';
+
+import Link from "next/link";
+
 function MyWork() {
 
     SwiperCore.use([Autoplay]);
     SwiperCore.use([Pagination]);
     return ( 
         <div className="flex flex-col items-center justify-center w-full">
-
+       
                 <div className="flex flex-col items-center justify-center px-10">
                     <div className="flex flex-col items-center justify-center py-5">
                         <h1 className="text-4xl font-bold">
@@ -50,25 +53,34 @@ function MyWork() {
                     flex item-centers justify-center w-full  '>
                         <div className='flex flex-row item-center justify-center mx-auto bg-primary-100 h-[350px] max-w-[85%] px-5 rounded-md gap-14'>
                             <div className='relative flex flex-col items-center justify-center space-y-4'>
-                                <div className="relative text-black text-3xl font-bold">
+                                <div className="relative text-black text-2xl font-bold">
                                        {project.title}
 
                                 </div>
                               
-                                <div className="relative  text-black text-sm font-bold">
-                                    {project.description}
-                                </div>
-                                <div className=" flex items-center justify-center  absolute right-0 bottom-10 gap-4 ">
+                                <span className="relative  text-black text-sm font-bold">
+                                    {project.description}&nbsp;-&nbsp;
+                                    <div className=" inline-block bg-primary-200 text-white p-1 rounded-lg">
+                                    {project.tag}
+
+                                    </div>
+                                </span>
+                                
+                                <div className=" flex items-center justify-center gap-4 ">
                                     {project.preview != null ? (
                                         <Button className="text-black font-semibold" color="primary"
                                         variant="ghost">
-                                            Preview
+                                            <Link href={project.preview}>
+                                                Preview 
+                                            </Link>
                                         </Button>
                                     ) : null}
                                     {project.github != null ? (
                                         <Button className="text-black font-semibold"  color="primary"
                                         variant="ghost">
-                                            Github
+                                           <Link href={project.github}>
+                                                Github 
+                                            </Link>
                                         </Button>
                                     ) : null}
                                 </div>

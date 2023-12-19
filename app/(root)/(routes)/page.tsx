@@ -4,11 +4,21 @@ import {Button} from "@nextui-org/react";
 import SkillPanel from "./_components/skill-panel";
 import WorkExperience from "./_components/work-experience";
 import MyWork from "./_components/my-works";
-
+import Link from "next/link";
+import { aboutMe } from "@/helpers/constant";
 export default function Homepage() {
     return (  
         <>
             <section id="introduction" className="w-wrapper h-screen">
+                <div>
+                    <Image
+                        className="object-cover opacity-50 z-[-1]"
+                        src={"/images/bg/sunset.jpg"}
+                        alt="Picture of the author"
+                        fill
+                        sizes="500px"
+                        />
+                </div>
                 <div className="flex items-center justify-center mx-auto h-[75%]">
                     <div className="flex flex-col items-center justify-center h-full gap-4">
                         <text>
@@ -21,9 +31,9 @@ export default function Homepage() {
                         </text>
                         <Button className="flex items-center justify-center p-6"
                         color="primary" variant="ghost">
-                            <text className="text-2xl font-bold text-primary-100 ">
-                                My Works...
-                            </text>
+                            <Link href="/#my-work" className="text-2xl font-bold text-primary-100" >
+                            My Works...
+                                </Link>
                         </Button>
                     </div>
                 </div>
@@ -44,13 +54,19 @@ export default function Homepage() {
                         </div>
                         <div className="flex items-center  justify-centers gap-4">
                             <Button className="flex items-center justify-center text-black font-semibold" color="primary" variant="ghost">
+                                <Link href={aboutMe.resume} download="cv">
                                     Resume
+                                </Link>
                             </Button>
                             <Button className="flex items-center justify-center text-black font-semibold" color="primary" variant="ghost">
+                                <Link href={aboutMe.github} >
                                     Github
+                                </Link>
                             </Button>
                             <Button className="flex items-center justify-center text-black font-semibold" color="primary" variant="ghost">
+                                <Link href={aboutMe.linkedIn} >
                                     LinkedIn
+                                </Link>
                             </Button>
                         </div>
                         
@@ -59,8 +75,8 @@ export default function Homepage() {
                 </div>
             </section>
 
-            <section id="work-experience" className="w-wrapper w-full my-10">
-                <div className="flex flex-col items-center justify-center px-10">
+            <section id="work-experience" className="w-wrapper w-full my-10 bg-primary-300">
+                <div className="flex flex-col items-center justify-center px-10 pb-10">
                     <div className="flex flex-col items-center justify-center py-5">
                         <h1 className="text-4xl font-bold">
                             Work 
@@ -77,9 +93,8 @@ export default function Homepage() {
                             <WorkExperience/>
                     </div>
                 </div>
-                
             </section>
-            <section id="skill" className="w-wrapper w-full my-20 bg-primary-100">
+            <section id="skill" className="w-wrapper w-full my-10 bg-primary-100">
                 <div className="flex flex-col items-center justify-center px-10">
                     <div className="flex flex-col items-center justify-center py-5">
                         <h1 className="text-4xl font-bold text-black">
@@ -92,7 +107,8 @@ export default function Homepage() {
                 </div>
                 <SkillPanel/>
             </section>
-            <section id="my-work" className="flex item-center justify-center w-full w-wrapper my-32">
+            <section id="my-work" className="flex item-center justify-center w-full w-wrapper bg-primary-300 py-32">
+                    
                 <MyWork/>
             </section>
             {/* <section id="contact-me" className="flex item-center justify-center w-full w-wrapper my-32">
