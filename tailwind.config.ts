@@ -127,7 +127,7 @@ const config: Config = {
         "vintage": {
           extend: "dark", // <- inherit default values from dark theme
           colors: {
-            background: "#B2A59B",
+            background: "#FAEED1",
             foreground: "#ffffff",
             primary: {
               50: "#607274",

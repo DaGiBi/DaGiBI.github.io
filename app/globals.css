@@ -70,6 +70,27 @@ body:after, body:before {
   z-index: 20000;
 }
 
+html::before{
+  left: 0;
+}
+
+html::after{
+  right: 0;
+}
+
+
+html:after, html:before {
+  content: "";
+  will-change: top left;
+  backface-visibility: hidden;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  background: #fff;
+  z-index: 21000;
+}
+
 #timeline::before {
   content: '';
   position: absolute;
