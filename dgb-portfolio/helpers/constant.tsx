@@ -1,4 +1,18 @@
+export const navigation = [
+    {
+        name: "About Me",
+        href: "#about-me",
+    },
+    {
+        name: "My Experience",
+        href: "#work-experience",
+    },
+    {
+        name: "My Work",
+        href: "#my-work",
+    },
 
+];
 export const mywork = [
     {
         title: "HFMD Digital Diagonosis Mobile Application using Deep Learning",
@@ -141,7 +155,7 @@ export const skills = [
     },
     {
         name: "HTML",
-        icon: "html.svg",
+        icon: "html5.svg",
     },
     {
         name: "CSS",

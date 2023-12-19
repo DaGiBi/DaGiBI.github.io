@@ -29,7 +29,7 @@ export default function Homepage() {
                 </div>
             </section>
 
-            <section id="introduction" className="w-wrapper bg-primary-100">
+            <section id="about-me" className="w-wrapper bg-primary-100">
                 <div className="flex items-center justify-center mx-auto h-[75%] py-20">
                     <div className="flex flex-col items-center justify-center h-full gap-5 w-[70%]">
                         <div className="">
