@@ -13,15 +13,116 @@ export const navigation = [
     },
 
 ];
+
+export const aboutMe = {
+
+    
+    resume: "/pdf/Resume Mohamad Najib Bin Mohamad Aseri.pdf",
+    
+    
+    github: "https://github.com/DaGiBi",
+    
+    
+    linkedIn: "https://www.linkedin.com/in/najibaseri/",
+};
+    
+
 export const mywork = [
     {
-        title: "HFMD Digital Diagonosis Mobile Application using Deep Learning",
-        description: "Mobile application that can  diagnose HFMD disease using trained deep learning model VGG-16. Its part of my final year project.",
-        features: [
-            "Digitaly diagnose HFMD disease on the go using mobile application with or without internet connection. using VGG-16 model and flutter framework.",
-            "Hotspot tracking for positive HFMD cases using Open Street Map.",
-            "View HFMD cases statistic colleced via the mobile application in real time.",
+        title: "VHR - Human Resource Application",
+        description: "Human resource mobile application developed using Flutter. The application is connected to the backend API developed using Laravel.",
+        tag: "internship project",
+        images: [
+            {
+                src: "/images/projects/vhr/login.jpg",
+                alt: "login",
+            },
+            {
+                src: "/images/projects/vhr/home.jpg",
+                alt: "home",
+            },
+            {
+                src: "/images/projects/vhr/drawer.jpg",
+                alt: "drawer",
+            },
+            {
+                src: "/images/projects/vhr/recognition.jpg",
+                alt: "recognition",
+            },
+            {
+                src: "/images/projects/vhr/leave.jpg",
+                alt: "leave",
+            },
+            {
+                src: "/images/projects/vhr/expense.jpg",
+                alt: "expense",
+            },
+            {
+                src: "/images/projects/vhr/calendar.jpg",
+                alt: "calendar",
+            },
         ],
+        preview: "https://play.google.com/store/apps/details?id=com.vhr.webapp&hl=en&gl=US&pli=1"
+    },
+    {
+        title: "Daun - Recycling Web & Mobile Application",
+        description: "Recycling Reward web and mobile application developed using Laravel Blade for Web and React Native for mobile application.",
+        tag: "internship project",
+        images: [
+            {
+                src: "/images/projects/daun/dashboard.png",
+                alt: "dashboard",
+            },
+            {
+                src: "/images/projects/daun/request.png",
+                alt: "request",
+            },
+            {
+                src: "/images/projects/daun/add.png",
+                alt: "add",
+            },
+            {
+                src: "/images/projects/daun/login.png",
+                alt: "login",
+            },
+            {
+                src: "/images/projects/daun/home.png",
+                alt: "home",
+            },
+            {
+                src: "/images/projects/daun/map.png",
+                alt: "map",
+            },
+            {
+                src: "/images/projects/daun/history.png",
+                alt: "history",
+            },
+        ],
+        preview: "https://play.google.com/store/apps/details?id=com.vhr.webapp&hl=en&gl=US&pli=1"
+    },
+    {
+        title: "Senang.io",
+        description: "Webpage for insurance products by Senang developed using Next.js.",
+        tag: "internship project",
+        images: [
+            {
+                src: "/images/projects/senang/home.png",
+                alt: "home",
+            },
+            {
+                src: "/images/projects/senang/feature.png",
+                alt: "feature",
+            },
+            {
+                src: "/images/projects/senang/contact.png",
+                alt: "home",
+            },
+        ],
+    },
+    {
+        title: "HFMD Digital Diagonosis Mobile Application using Deep Learning",
+        description: "Mobile app that can diagnose HFMD developed using Flutter, MongoDB Atlas, OpenStreetMap, and TFLite with a trained VGG-16 model",
+        tag: "final year project",
         images: [
             {
                 src: "/images/projects/hfmd/login.jpg",
@@ -61,14 +162,11 @@ export const mywork = [
             },
         ],
         github: "https://github.com/DaGiBi/hfmd_app",
-        preview: "",
     },
     {
         title: "Steam Store Game Sales Report",
         description: "Utilized Power BI to visually analyze and present a comprehensive sales report for games on the Steam Store. Uncover key success factors contributing to effective video game sales with my colleagues.",
-        features: [
-            "Visaulize and analyze sales report for games on Steam Store.",
-        ],
+        tag: "academic project",
         images: [
             {
                 src: "/images/projects/steam-sales/home.png",
@@ -91,10 +189,8 @@ export const mywork = [
     },
     {
         title: "Sentiment Analysis on Tesla Reviews",
-        description: "Sentiment analysis done on Tesla cars review using data mining and few sentiment  analysis modelings method and The study aims to uncover customer sentiment, highlight areas for improvement, and inform strategic decision-making within Tesla.",
-        features: [
-            "Implementing data mining, rapid miner and sentiment analysis on Tesla reviews.",
-        ],
+        description: "Sentiment analysis done on Tesla cars review using data mining rapid miner for data cleaning, preprocessing, model training and few sentiment  analysis modelings method. The study aims to uncover customer sentiment, highlight areas for improvement",
+        tag: "academic project",
         images: [
             {
                 src: "/images/projects/tesla/compare.png",
