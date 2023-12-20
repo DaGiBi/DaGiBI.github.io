@@ -33,11 +33,11 @@ function MyWork() {
                         </p>
                     </div>
                 </div>
-                <div className="w-full ">
+                <div className="w-full fade-in ">
 
                 
                 <Swiper 
-             
+             className="relative"
             slidesPerView={1}
             spaceBetween={10}
             pagination={{
@@ -100,7 +100,7 @@ function MyWork() {
                                   <SwiperSlide key={idx2} className='
                                   flex item-centers justify-center w-full h-full'
                                 >
-                                <div className="relative flex flex-row items-center justify-center my-auto h-full w-[250px] bg-primary-50 rounded-md py-2">
+                                <div className="relative flex flex-row items-center justify-center my-auto h-full w-[250px] bg-primary-50 rounded-md py-2 ">
                                     <Image
                                     src={`${images.src}`}
                                     alt={`${images.alt}`}
@@ -116,14 +116,16 @@ function MyWork() {
                               
                                     
                                 </SwiperSlide>
+                                
                               ))}
+                              <div className="swiper-pagination inner"></div>
                             </Swiper>
                              
                             </div>
                         </div>
                     </SwiperSlide>
             ))} 
-            <div className="swiper-pagination"></div>
+            <div className="swiper-pagination outer"></div>
         </Swiper>
         </div>
         </div>

@@ -6,13 +6,16 @@ import WorkExperience from "./_components/work-experience";
 import MyWork from "./_components/my-works";
 import Link from "next/link";
 import { aboutMe } from "@/helpers/constant";
+import React, { useEffect, useState } from 'react';
+
 export default function Homepage() {
+
     return (  
         <>
             <section id="introduction" className="w-wrapper h-screen">
                 <div>
                     <Image
-                        className="object-cover opacity-50 z-[-1]"
+                        className="object-cover opacity-50 z-[-1] transition"
                         src={"/images/bg/sunset.jpg"}
                         alt="Picture of the author"
                         fill
@@ -22,14 +25,17 @@ export default function Homepage() {
                 <div className="flex items-center justify-center mx-auto h-[75%]">
                     <div className="flex flex-col items-center justify-center h-full gap-4">
                         <text>
-                            <h1 className="text-5xl font-bold">Hi, I`m 
+                            <div  className={`text-5xl font-bold moveInRight`}>
+                                Hi, I`m 
                                 <span className="font-bold text-primary-100">
                                 &nbsp;Najib
                                 </span>
-                            </h1>
-                            <h2 className="text-2xl  font-semibold">I`m Full-Stack Web Developer</h2>
+                            </div>
+                            <h2 className="text-2xl font-semibold moveInLeft">
+                                I`m Full-Stack Web Developer
+                            </h2>
                         </text>
-                        <Button className="flex items-center justify-center p-6"
+                        <Button className="flex items-center justify-center p-6 fade-in "
                         color="primary" variant="ghost">
                             <Link href="/#my-work" className="text-2xl font-bold text-primary-100" >
                             My Works...
