@@ -7,6 +7,7 @@ import MyWork from "./_components/my-works";
 import Link from "next/link";
 import { aboutMe } from "@/helpers/constant";
 import React, { useEffect, useState } from 'react';
+import ContactForm from "./_components/contact-form";
 
 export default function Homepage() {
 
@@ -117,9 +118,9 @@ export default function Homepage() {
                     
                 <MyWork/>
             </section>
-            {/* <section id="contact-me" className="flex item-center justify-center w-full w-wrapper my-32">
-                contact-me
-            </section> */}
+            <section id="contact-me" className="flex item-center justify-center w-full w-wrapper my-32">
+                <ContactForm/>
+            </section>
 
         </>
        

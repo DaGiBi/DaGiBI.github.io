@@ -33,32 +33,34 @@ function MyWork() {
                         </p>
                     </div>
                 </div>
-                <div className="w-full fade-in ">
+                <div className="w-full fade-in  ">
 
                 
                 <Swiper 
              className="relative"
-            slidesPerView={1}
+            slidesPerView={1.1}
             spaceBetween={10}
             pagination={{
                 clickable: true,
             }}
             direction='horizontal'
             centeredSlides={true}
-                modules={[Pagination]}
+            loop={true}
+            slidesPerGroup={1}
+                // modules={[Pagination]}
             >
                       
                 {mywork.map((project, idx) => (
                     <SwiperSlide key={idx} className='
-                    flex item-centers justify-center w-full  '>
-                        <div className='flex flex-row item-center justify-center mx-auto bg-primary-100 h-[350px] max-w-[85%] px-5 rounded-md gap-14'>
-                            <div className='relative flex flex-col items-center justify-center space-y-4'>
-                                <div className="relative text-black text-2xl font-bold">
+                    flex item-centers justify-center w-full p-5'>
+                        <div className='flex flex-col sm:flex-row item-center justify-center mx-auto bg-primary-100 h-[500px] sm:h-[400px]  px-5 rounded-md sm:gap-14'>
+                            <div className='relative flex flex-col items-center justify-center space-y-4 p-1'>
+                                <div className="relative text-black text-base sm:text-2xl font-bold">
                                        {project.title}
 
                                 </div>
                               
-                                <span className="relative  text-black text-sm font-bold">
+                                <span className="relative  text-black text-xs sm:text-sm font-bold">
                                     {project.description}&nbsp;-&nbsp;
                                     <div className=" inline-block bg-primary-200 text-white p-1 rounded-lg">
                                     {project.tag}
@@ -66,9 +68,9 @@ function MyWork() {
                                     </div>
                                 </span>
                                 
-                                <div className=" flex items-center justify-center gap-4 ">
+                                <div className=" flex items-center justify-center  gap-2 sm:gap-4 ">
                                     {project.preview != null ? (
-                                        <Button className="text-black font-semibold" color="primary"
+                                        <Button className="text-black  font-semibold" color="primary"
                                         variant="ghost">
                                             <Link href={project.preview}>
                                                 Preview 
@@ -85,7 +87,7 @@ function MyWork() {
                                     ) : null}
                                 </div>
                             </div>
-                            <div className='flex flex-col items-center justify-center m-auto max-h-[90%] '>
+                            <div className='flex flex-col items-center justify-center m-auto max-h-[50%] sm:max-h-[90%] '>
                                  <Swiper
                                 className=""
                                 direction={'vertical'}
@@ -94,13 +96,13 @@ function MyWork() {
                                 pagination={{
                                     clickable: true,
                                 }}
-                                modules={[Pagination]}
+                                // modules={[Pagination]}
                             >
                               {project.images.map((images, idx2) => (
                                   <SwiperSlide key={idx2} className='
-                                  flex item-centers justify-center w-full h-full'
+                                  flex item-centers justify-center w-full h-full mx-3'
                                 >
-                                <div className="relative flex flex-row items-center justify-center my-auto h-full w-[250px] bg-primary-50 rounded-md py-2 ">
+                                <div className="relative flex flex-row items-center justify-center my-auto h-full w-[220px] sm:w-[250px] bg-primary-50 rounded-md py-2 ">
                                     <Image
                                     src={`${images.src}`}
                                     alt={`${images.alt}`}
@@ -118,14 +120,14 @@ function MyWork() {
                                 </SwiperSlide>
                                 
                               ))}
-                              <div className="swiper-pagination inner"></div>
+                              <div id="inner" className="swiper-pagination"></div>
                             </Swiper>
                              
                             </div>
                         </div>
                     </SwiperSlide>
             ))} 
-            <div className="swiper-pagination outer"></div>
+            <div className="swiper-pagination "></div>
         </Swiper>
         </div>
         </div>

@@ -143,6 +143,9 @@ const config: Config = {
               DEFAULT: "#607274",
               foreground: "#ffffff",
             },
+            secondary: {
+              DEFAULT: "#B2A59B",
+            },
             focus: "#FAEED1",
           },
           layout: {
