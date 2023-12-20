@@ -70,9 +70,9 @@ export default function NavBar() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem>
-            {/* <Button as={Link} color="primary" href="#" variant="flat">
-              Hire Me
-            </Button> */}
+            <Button as={Link} color="primary" href="/#contact-me" variant="flat">
+              Contact Me
+            </Button>
           </NavbarItem>
         </NavbarContent>
         
