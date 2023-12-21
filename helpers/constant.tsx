@@ -17,7 +17,7 @@ export const navigation = [
 export const aboutMe = {
 
     
-    resume: "/pdf/Resume Mohamad Najib Bin Mohamad Aseri.pdf",
+    resume: "/pdf/Resume-Mohamad Najib Bin Mohamad Aseri.pdf",
     
     
     github: "https://github.com/DaGiBi",

@@ -32,7 +32,7 @@ export default function Homepage() {
                                 &nbsp;Najib
                                 </span>
                             </div>
-                            <h2 className="text-2xl font-semibold moveInLeft">
+                            <h2 className="text-2xl font-semibold moveInLeft">  
                                 I`m Full-Stack Web Developer
                             </h2>
                         </text>

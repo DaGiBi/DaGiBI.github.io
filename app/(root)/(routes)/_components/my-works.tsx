@@ -47,7 +47,7 @@ function MyWork() {
             centeredSlides={true}
             loop={true}
             slidesPerGroup={1}
-                // modules={[Pagination]}
+                modules={[Pagination]}
             >
                       
                 {mywork.map((project, idx) => (
@@ -96,7 +96,7 @@ function MyWork() {
                                 pagination={{
                                     clickable: true,
                                 }}
-                                // modules={[Pagination]}
+                                modules={[Pagination]}
                             >
                               {project.images.map((images, idx2) => (
                                   <SwiperSlide key={idx2} className='
@@ -120,7 +120,7 @@ function MyWork() {
                                 </SwiperSlide>
                                 
                               ))}
-                              <div id="inner" className="swiper-pagination"></div>
+                              <div className="swiper-pagination"></div>
                             </Swiper>
                              
                             </div>
